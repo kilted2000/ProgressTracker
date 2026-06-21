@@ -33,20 +33,30 @@ export default function Card() {
 //       ))}
 //     </tr>
 
-//let projects = [];
 
+
+     type Projects = {
+      id: number;
+        name: string;
+        description: string;
+
+    }
+
+    const projects = [];
   return (
     <ul>
-        <li>
-             <div className="card w-96 bg-blue-900 card-md border-b-5 border-rose-950">
+      
+             <div className="card w-96 bg-blue-900 card-md">
   <div className="card-body">
     <h2 className="card-title">BBRT</h2>
     <p>Web app for planning baseball roadtrips</p>
     <progress className="progress progress-success w-56" value="70" max="100"></progress>
   </div>
 </div>
-        </li>
+        <li key={projects.id}></li>
+        <div className="divider"></div>
     </ul>
-
+ 
   );
 }
+
