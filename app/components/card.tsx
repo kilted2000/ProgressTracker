@@ -1,7 +1,7 @@
 
 
 
-export default function Card() {
+//export default function Card() {
   //iterate through project card
     //display each project in a single col
     //maybe have project object with Name, Description, progress bar
@@ -35,28 +35,30 @@ export default function Card() {
 
 
 
-     type Projects = {
-      id: number;
-        name: string;
-        description: string;
+    //  type Projects = {
+    //   id: number;
+    //     name: string;
+    //     description: string;
 
-    }
+    // }
 
-    const projects = [];
-  return (
-    <ul>
+    // const projects = [];
+//   return (
+//     <>
+//                  <div className="card w-96 bg-blue-900 card-md">
+//   <div className="card-body">
+//     <h2 className="card-title">{project.name}</h2>
+//     <p>{project.description}</p>
+//     <progress className="progress progress-success w-56" value="70" max="100"></progress>
+//   </div>
+// </div>
+        
+//         <div className="divider"></div>
+//     </>
       
-             <div className="card w-96 bg-blue-900 card-md">
-  <div className="card-body">
-    <h2 className="card-title">BBRT</h2>
-    <p>Web app for planning baseball roadtrips</p>
-    <progress className="progress progress-success w-56" value="70" max="100"></progress>
-  </div>
-</div>
-        <li key={projects.id}></li>
-        <div className="divider"></div>
-    </ul>
+
+    
  
-  );
-}
+//   );
+// }
 
