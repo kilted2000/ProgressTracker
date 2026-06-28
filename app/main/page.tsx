@@ -18,7 +18,7 @@ export default function mainPage() {
             <Link href="/" className="w-14 border-2 border-rose-950">Home</Link>
             <ul>
                 {projects.map((project: Projects) => (
-                    <li key={project.name}>                 <div className="card w-96 bg-blue-900 card-md">
+                    <li key={project.name}><div className="card w-96 bg-blue-900 card-md">
                         <div className="card-body">
                             <h2 className="card-title">{project.name}</h2>
                             <p>{project.description}</p>
