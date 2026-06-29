@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Form from 'next/form'
 //import Card from "../components/card"
 
 export default function mainPage() {
@@ -12,6 +13,12 @@ export default function mainPage() {
         name: "BBRT",
         description: "Road trip planner"
     }];
+//user fills out form in modal-
+//hits submit
+//contents of form pushed to projects object array
+//obj array is mapped over and displays 
+
+
     return (
         <>
             <h1>Projects</h1>
@@ -38,7 +45,7 @@ export default function mainPage() {
                     <h3 className="font-bold text-lg">Create (another) New Project</h3>
                     <p className="py-4">Press ESC key or click the button below to close</p>
                     <div className="modal-action">
-                        <form method="dialog">
+                        <Form method="dialog">
                             <div>
                                 <label htmlFor="name">Enter your projects name: </label>
                                 <input type="text" name="name" id="name" className="bg-white text-black" />
@@ -48,7 +55,7 @@ export default function mainPage() {
                                 <input type="text" name="description" id="name" className="bg-white text-black" />
                             </div>
                             <button className="btn">Close</button>
-                        </form>
+                        </Form>
                     </div>
                 </div>
             </dialog>
